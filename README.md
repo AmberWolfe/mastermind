@@ -1,1 +1,3 @@
 # mastermind
+
+The goal of this project is to recreate one of my childhood favorite games "Mastermind" as a console app. I would like to take this idea further at some point and try to create a phone application with graphics instead of numbers (something fun for my kids to play with in a few years), but for now I want to work on understanding how the backend coding would work for a program like this.
