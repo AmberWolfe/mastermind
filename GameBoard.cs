@@ -33,7 +33,7 @@ namespace MastermindKnockoff
 
         public string[] guessFeedback { get; } = new string[4];
 
-        public int FullyCorrectSlotGuess(string playerGuess, string correctAnswer)
+        public int NumOfFullyCorrectGuesses(string playerGuess, string correctAnswer)
         {
             int numberOfCorrect = 0;
             for (int i = 0; i < 4; i++)
@@ -46,33 +46,32 @@ namespace MastermindKnockoff
             return numberOfCorrect;
         }
 
-        public int PartiallyCorrectGuess(string playerGuess, string correctAnswer)
+        public int NumOfPartiallyCorrectGuesses(string playerGuess, string correctAnswer)
         {
-            int numberOfPartiallyCorrect = 0;
+            HashSet<string> partCorrect = new HashSet<string>();
             for (int i = 0; i < 4; i++)
             {
                 if (playerGuess[i] != correctAnswer[i])
                 {
                     if (playerGuess[i] == correctAnswer[0])
                     {
-                        numberOfPartiallyCorrect += 1;
+                        partCorrect.Add("correctAnswer[0]");
                     }
                     else if (playerGuess[i] == correctAnswer[1])
                     {
-                        numberOfPartiallyCorrect += 1;
+                        partCorrect.Add("correctAnswer[1]");
                     }
                     else if (playerGuess[i] == correctAnswer[2])
                     {
-                        numberOfPartiallyCorrect += 1;
+                        partCorrect.Add("correctAnswer[3]");
                     }
                     else if (playerGuess[i] == correctAnswer[3])
                     {
-                        numberOfPartiallyCorrect += 1;
+                        partCorrect.Add("correctAnswer[4]");
                     }
                 }
             }
-            return numberOfPartiallyCorrect;
-
+            return partCorrect.Count;
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T8cePvdeqrhH/UHSn50j/sKzBdNKxBfppjt9k66hFx3mH/T0jishlSiQqQiKvqwUUc4RJlpt8F+4GZNJQRzbBg==",
+  "dgSpecHash": "AVbGt4MdXTkZ2XuLypjl+Lsg0/BBgmfM7Gq5lINH7aX1l7zI6xVcijz2ZkqlpwfYpCRzcRuMolGKf6PBRKD13Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Student\\workspace\\myOwnWork\\mastermindRepository\\mastermind-main\\MastermindKnockoff\\MastermindKnockoff.csproj",
+  "projectFilePath": "C:\\Users\\Student\\workspace\\myOwnWork\\mastermindRepository\\mastermind-main\\mastermind\\MastermindKnockoff.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
