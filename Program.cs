@@ -6,7 +6,11 @@ namespace MastermindKnockoff
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ConsoleCommands cc = new ConsoleCommands();
+            Style style = new Style();
+            cc.Run();
+            cc.BeginGame();
+            style.MakeSpace();
         }
     }
 }
