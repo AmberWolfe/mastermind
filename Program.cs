@@ -10,7 +10,7 @@ namespace MastermindKnockoff
             Style style = new Style();
             cc.Run();
             cc.BeginGame();
-            style.MakeSpace();
+            cc.StartMenu();
         }
     }
 }
